@@ -84,3 +84,6 @@ Shorter recipes recieve more ratings per recipe. Recipes in the 0-15 mins catego
 ### NMAR Analysis
 name, description, user_id, recipe_id, date, rating, and review all have missing values. Of these, I will focus on "review" because I believe "review" to be NMAR. The missingness in the review column is Not Missing At Random (NMAR) because it depends on users’ emotional responses to the recipe, which are unobserved in the dataset. Users with strong feelings—whether positive or negative—are more likely to leave a review, while those who feel indifferent are less inclined to invest the effort required to write one. Since this behavior is driven by the missing emotional response itself and cannot be explained by other observable variables, the missingness in review is NMAR.
 ### Missingness Dependency
+Then, I proceeded to examine the missingness of the 'rating' column in the merged DataFrame by testing whether its missingness depends on the column 'n_steps' (the number of steps in the recipe) or the column 'minutes' (the cooking time of the recipe).
+> Rating vs Cooking Time
+
