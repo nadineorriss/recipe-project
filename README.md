@@ -52,7 +52,7 @@ To prepare the dataset for analysis, several key data cleaning steps were perfor
 
 
 
-**By performing these steps, the dataset was transformed into a clean and structured format that supports the intended analyses. My cleand data frame ended up with 234429 rows and 21 columns, here is the head of my cleaned data frame with the most relevant columns to my analyses shown: (scroll right to view all columns) **
+**By performing these steps, the dataset was transformed into a clean and structured format that supports the intended analyses. My cleand data frame ended up with 234429 rows and 21 columns, here is the head of my cleaned data frame with the most relevant columns to my analyses shown: (scroll right to view all columns)**
 
 | name                                 |     id |   minutes |    n_steps|   rating |   average rating |  time_category |  calories |  total fat |  sugar |  carbohydrates |  protein |
 |:-------------------------------------|-------:|----------:|:----------|---------:|-----------------:|---------------:|----------:|-----------:|-------:|---------------:|---------:|
