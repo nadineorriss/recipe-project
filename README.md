@@ -34,10 +34,6 @@ The second dataset, `interactions`, contains 731927 rows and each row contains a
 | `'rating'`    | Rating given        |
 | `'review'`    | Review text         |
 
-**Given the datasets, I am investigating whether people rate quick and easy recipes on the same scale.** To facilitate the investigation of my question, I categorized recipes into distinct time ranges based on their total preparation and cooking time: "0-15 mins," "15-30 mins," "30-60 mins," "1-2 hours," and "2+ hours." This information 'time_category' column was created by binning the original 'total_time' column, which represents the time it takes to prepare and cook each recipe.
-Additionally, I calculated the average rating for each time category to compare the popularity of recipes within these groups. The most relevant columns to answer my question are 'time_category,' described above, 'rating,' which is the rating a user gave a recipe, and 'average rating,' which is the average of all ratings for each unique recipe.
-By seeking an answer to my question, I aim to provide valuable insights into people’s preferences for recipes based on their time commitments. These insights can help contributors on Food.com and similar platforms adapt their recipes to align better with public interests, particularly in catering to busy lifestyles. Moreover, this analysis can serve as a foundation for future work exploring how time constraints influence dietary choices and culinary preferences.
-
 ## Data Cleaning and Exploratory Data Analysis
 To prepare the dataset for analysis, several key data cleaning steps were performed to ensure accuracy and usability. 
 1. First, the recipes dataset (RAW_recipes.csv) was merged with the interactions dataset (RAW_interactions.csv) using a left join on the id and recipe_id columns. This ensured that each unique recipe was matched with its corresponding ratings and reviews, while retaining all recipes even if they lacked user interaction data.
