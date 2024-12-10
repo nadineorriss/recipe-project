@@ -62,5 +62,9 @@ To prepare the dataset for analysis, several key data cleaning steps were perfor
 | 412 broccoli casserole               | 306168 |        40 |         6 |        5 |                5 |     30-60 mins |     194.8 |       20.0 |    6.0 |            3.0 |     22.0 |
 | 412 broccoli casserole               | 306168 |        40 |         6 |        5 |                5 |     30-60 mins |     194.8 |       20.0 |    6.0 |            3.0 |     22.0 |
 
+## Univariate Analysis
+The histogram below visualizes the distribution of recipe cooking times. The distribution is right-skewed, indicating that most recipes have shorter cooking times (e.g., under 60 minutes), while a smaller number require significantly longer preparation times, which could represent more elaborate or slow-cooked dishes.
 
+The histogram below visualizes the distribution of average recipe ratings, showing a left-skewed trend where the majority of recipes have high ratings (e.g., 4 or 5). This suggests that most recipes are well-received by users, with only a small proportion receiving lower ratings, indicating overall positive feedback for the dataset's recipes.
+## Bivariate Analysis
 
