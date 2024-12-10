@@ -71,10 +71,12 @@ The bar chart below explores the relationship between cooking time categories an
 
 ## Aggregate Analysis 
 The table below aggregates data by cooking time categories to calculate the total number of recipes, total ratings, and average ratings per recipe within each category, formatting the results for clarity. This helps analyze recipe popularity, user engagement, and trends in cooking times, offering insights into which categories attract the most interaction and align with user preferences.
+
 | Time Category     |     Total Recipes |   Total Ratings |    Avg. Ratings per Recipe |
 |:------------------|------------------:|----------------:|:---------------------------|
 |        0-15 mins  |            16,679 |          48,431 |                       2.90 |
 |       15-30 mins  |            20,632 |          58,153 |                       2.82 |
 |       30-60 mins  |            25,416 |          69,377 |                       2.73 |
 |         1+ hours  |            21,054 |          55,688 |                       2.65 |
+
 Shorter recipes recieve more ratings per recipe. Recipes in the 0-15 mins category have the highest average ratings per recipe (2.90). Enagagement gradually decreases as cooking time increases. Which we can interpret as users are more likely to engage with shorter recipes, which are quicker and easier to attempt. The average ratings per recipe decreases steadily with longer cooking times, reaching its lowest in the 1+ hours category. Longer recipes may deter users due to their time and effort requirements, leading to reduced engagement. Although longer categories like 30-60 mins and 1+ hours have the most recipes (25,416 and 21,054, respectively), their total ratings and average ratings per recipe are lower. Shorter categories attract more ratings per recipe despite having fewer recipes overall. Recipes in the 0-15 mins category, with 16,679 recipes, achieve the highest average engagement (2.90 ratings per recipe). Users are drawn to quick, simple recipes, which are perceived as more accessible and less intimidating. The data is telling us: to focus on developing and promoting shorter recipes (0-15 mins and 15-30 mins) to maximize user engagement.
