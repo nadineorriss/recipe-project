@@ -52,15 +52,15 @@ To prepare the dataset for analysis, several key data cleaning steps were perfor
 
 
 
-**By performing these steps, the dataset was transformed into a clean and structured format that supports the intended analyses. My cleand data frame ended up with 234429 rows and 21 columns, here is the head of my cleaned data frame:**
+**By performing these steps, the dataset was transformed into a clean and structured format that supports the intended analyses. My cleand data frame ended up with 234429 rows and 21 columns, here is the head of my cleaned data frame with the most relevant columns to my analyses shown:**
 
-| name                                 |     id |   minutes | submitted           |   rating |   average rating |   calories (#) |   sugar (PDV) | is_dessert   |   prop_sugar |
-|:-------------------------------------|-------:|----------:|:--------------------|---------:|-----------------:|---------------:|--------------:|:-------------|-------------:|
-| 1 brownies in the world    best ever | 333281 |        40 | 2008-10-27 00:00:00 |        4 |                4 |          138.4 |            50 | True         |    0.361272  |
-| 1 in canada chocolate chip cookies   | 453467 |        45 | 2011-04-11 00:00:00 |        5 |                5 |          595.1 |           211 | False        |    0.354562  |
-| 412 broccoli casserole               | 306168 |        40 | 2008-05-30 00:00:00 |        5 |                5 |          194.8 |             6 | False        |    0.0308008 |
-| millionaire pound cake               | 286009 |       120 | 2008-02-12 00:00:00 |        5 |                5 |          878.3 |           326 | True         |    0.371172  |
-| 2000 meatloaf                        | 475785 |        90 | 2012-03-06 00:00:00 |        5 |                5 |          267   |            12 | False        |    0.0449438 |
+| name                                 |     id |   minutes |    n_steps|   rating |   average rating |  time_category |
+|:-------------------------------------|-------:|----------:|:----------|---------:|-----------------:|---------------:|
+| 1 brownies in the world    best ever | 333281 |        40 |        10 |        4 |                4 |     30-60 mins |
+| 1 in canada chocolate chip cookies   | 453467 |        45 |        12 |        5 |                5 |     30-60 mins |
+| 412 broccoli casserole               | 306168 |        40 |         6 |        5 |                5 |     30-60 mins |
+| 412 broccoli casserole               | 306168 |        40 |         6 |        5 |                5 |     30-60 mins |
+| 412 broccoli casserole               | 306168 |        40 |         6 |        5 |                5 |     30-60 mins |
 
 
 
