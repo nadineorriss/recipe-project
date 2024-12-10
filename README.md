@@ -40,8 +40,20 @@ To prepare the dataset for analysis, several key data cleaning steps were perfor
 
 2. Next, ratings of 0 were replaced with NaN. This decision was based on the understanding that a rating of 0 likely represents missing or invalid data rather than a legitimate user rating, as most rating systems use a scale starting at 1. Treating these values as missing ensures that they are excluded from calculations like averages, preventing them from artificially skewing statistics. This aligns with best practices for handling missing data in rating systems.
 
-3. An average rating for each recipe was then computed by grouping the data by id and taking the mean of the ratingcolumn. This value was mapped back to the main dataset in a new column, average_rating, to facilitate comparisons and further analysis of recipe popularity. Columns deemed unnecessary for the analysis, such as review (which contained text data not used in the current scope) and the duplicate recipe_id column, were dropped to simplify the dataset and reduce redundancy.
+3. The dataset was then grouped by id, and the mean rating was calculated for each recipe to produce an average_rating column. This provides a summary statistic of recipe popularity and serves as a simplified metric for further analyses, such as understanding the relationship between recipe length and user satisfaction.
 
-**My cleand data frame ended up with _ rows and _ columns, here is the head of my cleaned data frame:**
+4. Columns such as user_id, date, recipe_id, contributor_id, and submitted were dropped as they were not directly relevant to the analysis goals. Removing these columns reduced redundancy and simplified the dataset, making it more manageable for subsequent steps.
+
+5. Recipes were categorized into time bins (0-15 mins, 15-30 mins, 30-60 mins, and 1+ hours) based on their minutes column. This transformation created a time_category column, allowing for comparisons of average ratings across different preparation time ranges. This is particularly useful for analyzing whether shorter recipes are associated with higher ratings.
+
+6. Columns such as tags, nutrition, steps, and ingredients contained data stored as list-like strings. These were converted into actual lists to enable further analysis, such as extracting specific tags or calculating nutritional statistics.
+
+7. The nutrition column, which contained a list of nutritional values, was parsed into separate columns for individual metrics, such as calories, total fat, sugar, sodium, and others. This step was essential for the calorie prediction model, as it provided a clear and accessible format for the target variable (calories) and other nutritional predictors.
+
+
+
+**By performing these steps, the dataset was transformed into a clean and structured format that supports the intended analyses. My cleand data frame ended up with _ rows and _ columns, here is the head of my cleaned data frame:**
+
+
 
 
