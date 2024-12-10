@@ -75,6 +75,7 @@ The table below aggregates data by cooking time categories to calculate the tota
 | Time Category     |     Total Recipes |   Total Ratings |    Avg. Ratings per Recipe |
 |:------------------|------------------:|----------------:|:---------------------------|
 |        0-15 mins  |            16,679 |          48,431 |                       2.90 |
+|:------------------|
 |       15-30 mins  |            20,632 |          58,153 |                       2.82 |
 |       30-60 mins  |            25,416 |          69,377 |                       2.73 |
 |         1+ hours  |            21,054 |          55,688 |                       2.65 |
