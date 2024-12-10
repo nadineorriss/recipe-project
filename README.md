@@ -62,14 +62,14 @@ To prepare the dataset for analysis, several key data cleaning steps were perfor
 | 412 broccoli casserole               | 306168 |        40 |         6 |        5 |                5 |     30-60 mins |     194.8 |       20.0 |    6.0 |            3.0 |     22.0 |
 | 412 broccoli casserole               | 306168 |        40 |         6 |        5 |                5 |     30-60 mins |     194.8 |       20.0 |    6.0 |            3.0 |     22.0 |
 
-## Univariate Analysis
+### Univariate Analysis
 The histogram below visualizes the distribution of recipe cooking times. The distribution is right-skewed, indicating that most recipes have shorter cooking times (e.g., under 60 minutes), while a smaller number require significantly longer preparation times, which could represent more elaborate or slow-cooked dishes.
 
 The histogram below visualizes the distribution of average recipe ratings, showing a left-skewed trend where the majority of recipes have high ratings (e.g., 4 or 5). This suggests that most recipes are well-received by users, with only a small proportion receiving lower ratings, indicating overall positive feedback for the dataset's recipes.
-## Bivariate Analysis
+### Bivariate Analysis
 The bar chart below explores the relationship between cooking time categories and the average number of ratings per recipe. It reveals a decreasing trend, where shorter recipes (e.g., "0-15 mins") tend to receive more ratings on average compared to longer recipes (e.g., "1+ hours"). This suggests that users may engage more with quicker recipes, possibly due to their convenience or broader appeal.
 
-## Aggregate Analysis 
+### Aggregate Analysis 
 The table below aggregates data by cooking time categories to calculate the total number of recipes, total ratings, and average ratings per recipe within each category, formatting the results for clarity. This helps analyze recipe popularity, user engagement, and trends in cooking times, offering insights into which categories attract the most interaction and align with user preferences.
 
 | Time Category     |     Total Recipes |   Total Ratings |    Avg. Ratings per Recipe |
@@ -80,3 +80,6 @@ The table below aggregates data by cooking time categories to calculate the tota
 |         1+ hours  |            21,054 |          55,688 |                       2.65 |
 
 Shorter recipes recieve more ratings per recipe. Recipes in the 0-15 mins category have the highest average ratings per recipe (2.90). Enagagement gradually decreases as cooking time increases. Which we can interpret as users are more likely to engage with shorter recipes, which are quicker and easier to attempt. The average ratings per recipe decreases steadily with longer cooking times, reaching its lowest in the 1+ hours category. Longer recipes may deter users due to their time and effort requirements, leading to reduced engagement. Although longer categories like 30-60 mins and 1+ hours have the most recipes (25,416 and 21,054, respectively), their total ratings and average ratings per recipe are lower. Shorter categories attract more ratings per recipe despite having fewer recipes overall. Recipes in the 0-15 mins category, with 16,679 recipes, achieve the highest average engagement (2.90 ratings per recipe). Users are drawn to quick, simple recipes, which are perceived as more accessible and less intimidating. The data is telling us: to focus on developing and promoting shorter recipes (0-15 mins and 15-30 mins) to maximize user engagement.
+## Assessment of Missingness
+### NMAR Analysis
+### Missingness Dependency
