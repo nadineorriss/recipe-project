@@ -54,13 +54,13 @@ To prepare the dataset for analysis, several key data cleaning steps were perfor
 
 **By performing these steps, the dataset was transformed into a clean and structured format that supports the intended analyses. My cleand data frame ended up with 234429 rows and 21 columns, here is the head of my cleaned data frame with the most relevant columns to my analyses shown:**
 
-| name                                 |     id |   minutes |    n_steps|   rating |   average rating |  time_category |
-|:-------------------------------------|-------:|----------:|:----------|---------:|-----------------:|---------------:|
-| 1 brownies in the world    best ever | 333281 |        40 |        10 |        4 |                4 |     30-60 mins |
-| 1 in canada chocolate chip cookies   | 453467 |        45 |        12 |        5 |                5 |     30-60 mins |
-| 412 broccoli casserole               | 306168 |        40 |         6 |        5 |                5 |     30-60 mins |
-| 412 broccoli casserole               | 306168 |        40 |         6 |        5 |                5 |     30-60 mins |
-| 412 broccoli casserole               | 306168 |        40 |         6 |        5 |                5 |     30-60 mins |
+| name                                 |     id |   minutes |    n_steps|   rating |   average rating |  time_category |  calories |  total fat |  sugar |  carbohydrates |  protein |
+|:-------------------------------------|-------:|----------:|:----------|---------:|-----------------:|---------------:|----------:|-----------:|-------:|---------------:|---------:|
+| 1 brownies in the world    best ever | 333281 |        40 |        10 |        4 |                4 |     30-60 mins |     138.4 |       10.0 |   50.0 |            6.0 |      3.0 |
+| 1 in canada chocolate chip cookies   | 453467 |        45 |        12 |        5 |                5 |     30-60 mins |     595.1 |       46.0 |  211.0 |           26.0 |     13.0 |
+| 412 broccoli casserole               | 306168 |        40 |         6 |        5 |                5 |     30-60 mins |     194.8 |       20.0 |    6.0 |            3.0 |     22.0 |
+| 412 broccoli casserole               | 306168 |        40 |         6 |        5 |                5 |     30-60 mins |     194.8 |       20.0 |    6.0 |            3.0 |     22.0 |
+| 412 broccoli casserole               | 306168 |        40 |         6 |        5 |                5 |     30-60 mins |     194.8 |       20.0 |    6.0 |            3.0 |     22.0 |
 
 
 
