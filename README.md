@@ -87,3 +87,4 @@ name, description, user_id, recipe_id, date, rating, and review all have missing
 Then, I proceeded to examine the missingness of the 'rating' column in the merged DataFrame by testing whether its missingness depends on the column 'n_steps' (the number of steps in the recipe) or the column 'minutes' (the cooking time of the recipe).
 > Rating vs Cooking Time
 
+> Rating vs Number of Steps
