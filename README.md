@@ -112,3 +112,17 @@ I conducted a permutation test by shuffling the missingness mask of the rating c
 
 
 The observed statistic of 1.3386 is indicated by the red vertical line on the graph. Since the p-value we calculated (0.0000) is less than the significance level of 0.05, we reject the null hypothesis. This suggests that the missingness of rating does depend on the n_steps (number of steps) column.
+
+## Hypothesis Testing
+**Null Hypothesis:** The average rating for recipes that take 15 minutes or less is the same as the average rating for recipes that take more than 15 minutes.
+**Alternate Hypothesis:** The average rating for recipes that take 15 minutes or less is different from the average rating for recipes that take more than 15 minutes.
+**Test Statistic:** The absolute difference in mean ratings between the two groups (recipes that take 15 minutes or less vs. those that take more than 15 minutes).
+**Significance Level:** 0.05
+To evaluate the relationship between cooking time and average recipe ratings, I performed a permutation test:
+
+1. Calculated the observed test statistic, which was the absolute difference in mean ratings between the two groups (obs_diff_15 = 0.0485).
+2. Simulated the null hypothesis by randomly shuffling group labels (15 minutes or less vs. more than 15 minutes) 1000 times.
+3. Recalculated the test statistic for each permutation and generated a null distribution of permuted mean differences.
+4. Calculated the p-value as the proportion of permuted test statistics greater than or equal to the observed difference.
+
+**Conclusion:** Since the p-value is less than the significance level (0.0000 < 0.05), we reject the null hypothesis. This indicates that there is a statistically significant difference in average ratings between recipes that take 15 minutes or less and those that take more than 15 minutes. The results support the conclusion that recipes with shorter cooking times are rated higher, aligning with the hypothesis that users prefer quick and easy recipes.
