@@ -201,7 +201,8 @@ The final model’s R-squared values (0.9957) demonstrate that it captures nearl
 **Evaluation Metric:** The R-squared value, which measures the proportion of variance explained by the model for predicting calorie counts.
 
 **Null Hypothesis:** The model's performance does not depend on the number of ingredients in the recipe.
-Alternative Hypothesis: The model's performance does depend on the number of ingredients in the recipe.
+
+**Alternative Hypothesis:** The model's performance does depend on the number of ingredients in the recipe.
 
 **Test Statistic:** The absolute difference in R-squared values between Group X and Group Y.
 
