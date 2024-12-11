@@ -146,6 +146,14 @@ PUT PLOT HERE
 
 ## Framing a Prediction Problem 
 
+I am going to build a model using regression to predict the number of calories in a recipe. The response variable is calories, I chose it because i thought it would be the most straightforward and fun to implement. Because calories is a continuous response variable, prediction requires regression, not classification. I am using Root Mean Squared Error (RSME) as the metric for evaluation for a couple of reasons:
+1. it measures the average magnitude of prediction errors in the same units as the response variable, calories.
+2. it penalizes larger errors more heavily, which is appropriate for calorie prediction, where large deviations can be problematic.
+
+I chose it over Mean Absolute Error (MAE) because large errors are highly undesireable, and MAE measures the average magnitude of errors, treating all errors equally regardless of their size.
+
+The features I am going to use to predict calories are known before cooking the recipe, including preperation time "minutes", number of steps "n_steps", and the nutritional data that I already cleaned and split apart in the first part (fat, protein, carbs, sugar).
+
 ## Baseline Model
 
 ## Final Model
