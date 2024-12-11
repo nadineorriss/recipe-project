@@ -193,3 +193,32 @@ I did Hyperparameter tuning using GridSearchCV with 5-fold-cross-validation. The
 The final model’s R-squared values (0.9957) demonstrate that it captures nearly all variability in calorie content, while the RMSE of 5.9660 reflects highly precise predictions. Compared to the baseline model’s RMSE of 23.3495, the final model reduced the average prediction error by over 74%.
 
 ## Fairness Analysis
+
+**Group X:** Recipes with a low number of ingredients (e.g., fewer than 5 ingredients).
+
+**Group Y:** Recipes with a high number of ingredients (e.g., 5 or more ingredients).
+
+**Evaluation Metric:** The R-squared value, which measures the proportion of variance explained by the model for predicting calorie counts.
+
+**Null Hypothesis:** The model's performance does not depend on the number of ingredients in the recipe.
+Alternative Hypothesis: The model's performance does depend on the number of ingredients in the recipe.
+
+**Test Statistic:** The absolute difference in R-squared values between Group X and Group Y.
+
+**Significance Level:** 0.05
+
+Test Procedure:
+
+1. The observed test statistic was calculated as the absolute difference in R-squared values between the two groups.
+
+2. Under the null hypothesis, the labels indicating Group X and Group Y were shuffled randomly, breaking any true association between group membership and R-squared values.
+
+3. This permutation process was repeated 1000 times to create a null distribution of the test statistic.
+
+4. The p-value was calculated as the proportion of permuted test statistics greater than or equal to the observed test statistic.
+
+**Resulting p-value:** 0.0
+
+**Conclusion:**
+
+Since the p-value is 0.0, which is less than the significance level of 0.05, we reject the null hypothesis. This indicates that the model's performance, as measured by the R-squared difference, does depend on the number of ingredients in the recipe. The result suggests potential fairness concerns, as the model may perform differently for recipes with varying ingredient counts. Further investigation is needed to understand and address these disparities to ensure equitable performance across all recipe types.
