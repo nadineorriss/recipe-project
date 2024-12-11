@@ -142,7 +142,7 @@ The observed statistic of 51.4524 is indicated by the red vertical line on the g
 I conducted a permutation test by shuffling the missingness mask of the rating column 1000 times to simulate the null hypothesis, which assumes no relationship between the missingness of rating and the number of steps. For each permutation, I calculated the mean difference in the two distributions (missing vs. non-missing rating), generating 1000 simulated test statistics to compare against the observed value.
 
 <iframe
-  src="fig2.html"
+  src="missingness.html"
   width="800"
   height="600"
   frameborder="0"
