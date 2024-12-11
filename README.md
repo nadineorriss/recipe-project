@@ -143,3 +143,11 @@ To evaluate the relationship between cooking time and average recipe ratings, I 
 PUT PLOT HERE
 
 **Conclusion:** Since the p-value is less than the significance level (0.0000 < 0.05), we reject the null hypothesis. This indicates that there is a statistically significant difference in average ratings between recipes that take 15 minutes or less and those that take more than 15 minutes. The results support the conclusion that recipes with shorter cooking times are rated higher, aligning with the hypothesis that users prefer quick and easy recipes.
+
+## Framing a Prediction Problem 
+
+## Baseline Model
+
+## Final Model
+
+## Fairness Analysis
