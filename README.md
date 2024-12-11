@@ -174,4 +174,22 @@ As you can see with the above metrics, this is not what I consider to be a good 
 
 ## Final Model
 
+For my final model, I used Lasso regression.
+The features included were: n_ingredients, n_steps, total fat, protein, sugar, carbohydrates.
+I excluded minutes due to its weak correlation with calories and potential for introducing noise. Cooking time does not reliably predict calorie content. total fat, protein, sugar, and carbohydrates were added because they are directly tied to calorie content through the data generating process (nutritional components contribute directly to calorie count). Including macronutrients aligns with known caloric contributions:
+- Protein and carbohydrates contribute 4 calories per gram.
+- Fat contributes 9 calories per gram.
+- Sugar is a simple carbohydrate and a significant calorie contributor in many recipes.
+
+I chose Lasso regression for its ability to perform feature selection by shrinking coefficients of less relevant features to zero, and reducing overfitting and improving interpretability.
+
+For preprocessing, I standardized all numerical features (n_ingredients, n_steps, total fat, protein, sugar, carbohydrates) using StandardScaler.
+
+I did Hyperparameter tuning using GridSearchCV with 5-fold-cross-validation. The best hyperparameters and their significance were:
+- alpha = 0.1: Minimal regularization, allowing most features to contribute to the model.
+- max_iter = 1000: Ensures convergence of the optimization algorithm.'
+- tol = 0.001: Provides a good balance between precision and computational efficiency.
+
+The final model’s R-squared values (0.9957) demonstrate that it captures nearly all variability in calorie content, while the RMSE of 5.9660 reflects highly precise predictions. Compared to the baseline model’s RMSE of 23.3495, the final model reduced the average prediction error by over 74%.
+
 ## Fairness Analysis
