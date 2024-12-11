@@ -66,7 +66,7 @@ To prepare the dataset for analysis, several key data cleaning steps were perfor
 The histogram below visualizes the distribution of recipe cooking times. The distribution is right-skewed, indicating that most recipes have shorter cooking times (e.g., under 60 minutes), while a smaller number require significantly longer preparation times, which could represent more elaborate or slow-cooked dishes.
 
 <iframe
-  src="fig_rating.html"
+  src="fig_time.html"
   width="800"
   height="600"
   frameborder="0"
@@ -86,7 +86,7 @@ The histogram below visualizes the distribution of average recipe ratings, showi
 The bar chart below explores the relationship between cooking time categories and the average number of ratings per recipe. It reveals a decreasing trend, where shorter recipes (e.g., "0-15 mins") tend to receive more ratings on average compared to longer recipes (e.g., "1+ hours"). This suggests that users may engage more with quicker recipes, possibly due to their convenience or broader appeal.
 
 <iframe
-  src="fig_rating.html"
+  src="fig.html"
   width="800"
   height="600"
   frameborder="0"
