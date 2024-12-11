@@ -86,6 +86,7 @@ name, description, user_id, recipe_id, date, rating, and review all have missing
 ### Missingness Dependency
 Then, I proceeded to examine the missingness of the 'rating' column in the merged DataFrame by testing whether its missingness depends on the column 'n_steps' (the number of steps in the recipe) or the column 'minutes' (the cooking time of the recipe).
 > Rating vs Cooking Time
+
 **Null Hypothesis:** The missingness of the rating column does not depend on the minutes column (cooking time).
 
 **Alternate Hypothesis:** The missingness of the rating column depends on the minutes column (cooking time).
@@ -99,6 +100,7 @@ I conducted a permutation test by shuffling the missingness mask of the rating c
 The observed statistic of 51.4524 is indicated by the red vertical line on the graph. Since the p-value we calculated (0.1270) is greater than the significance level of 0.05, we fail to reject the null hypothesis. This suggests that the missingness of rating does not depend on the minutes (cooking time) column.
 
 > Rating vs Number of Steps
+
 **Null Hypothesis:** The missingness of the rating column does not depend on the n_steps column (number of steps).
 
 **Alternate Hypothesis:** The missingness of the rating column depends on the n_steps column (number of steps).
