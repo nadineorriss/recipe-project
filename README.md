@@ -86,5 +86,27 @@ name, description, user_id, recipe_id, date, rating, and review all have missing
 ### Missingness Dependency
 Then, I proceeded to examine the missingness of the 'rating' column in the merged DataFrame by testing whether its missingness depends on the column 'n_steps' (the number of steps in the recipe) or the column 'minutes' (the cooking time of the recipe).
 > Rating vs Cooking Time
+**Null Hypothesis:** The missingness of the rating column does not depend on the minutes column (cooking time).
+
+**Alternate Hypothesis:** The missingness of the rating column depends on the minutes column (cooking time).
+
+**Test Statistic:** The test statistic is the absolute difference in mean minutes (cooking time) between rows where rating is missing and rows where it is not missing.
+
+**Significance Level:** 0.05
+I conducted a permutation test by shuffling the missingness mask of the rating column 1000 times to simulate the null hypothesis, which assumes no relationship between the missingness of rating and the cooking time. For each permutation, I calculated the mean difference in the two distributions (missing vs. non-missing rating), generating 1000 simulated test statistics to compare against the observed value.
+
+
+The observed statistic of 51.4524 is indicated by the red vertical line on the graph. Since the p-value we calculated (0.1270) is greater than the significance level of 0.05, we fail to reject the null hypothesis. This suggests that the missingness of rating does not depend on the minutes (cooking time) column.
 
 > Rating vs Number of Steps
+**Null Hypothesis:** The missingness of the rating column does not depend on the n_steps column (number of steps).
+
+**Alternate Hypothesis:** The missingness of the rating column depends on the n_steps column (number of steps).
+
+**Test Statistic:** The test statistic is the absolute difference in mean number of steps (n_steps) between rows where rating is missing and rows where it is not missing.
+
+**Significance Level:** 0.05
+I conducted a permutation test by shuffling the missingness mask of the rating column 1000 times to simulate the null hypothesis, which assumes no relationship between the missingness of rating and the number of steps. For each permutation, I calculated the mean difference in the two distributions (missing vs. non-missing rating), generating 1000 simulated test statistics to compare against the observed value.
+
+
+The observed statistic of 1.3386 is indicated by the red vertical line on the graph. Since the p-value we calculated (0.0000) is less than the significance level of 0.05, we reject the null hypothesis. This suggests that the missingness of rating does depend on the n_steps (number of steps) column.
