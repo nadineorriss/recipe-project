@@ -246,6 +246,4 @@ Test Procedure:
 
 **Resulting p-value:** 0.0
 
-**Conclusion:**
-
-Since the p-value is 0.0, which is less than the significance level of 0.05, we reject the null hypothesis. This indicates that the model's performance, as measured by the R-squared difference, does depend on the number of ingredients in the recipe. The result suggests potential fairness concerns, as the model may perform differently for recipes with varying ingredient counts. Further investigation is needed to understand and address these disparities to ensure equitable performance across all recipe types.
+**Conclusion:** Since the p-value is 0.0, which is less than the significance level of 0.05, we reject the null hypothesis. This indicates that the model's performance, as measured by the R-squared difference, does depend on the number of ingredients in the recipe. The result suggests potential fairness concerns, as the model may perform differently for recipes with varying ingredient counts. Further investigation is needed to understand and address these disparities to ensure equitable performance across all recipe types.
