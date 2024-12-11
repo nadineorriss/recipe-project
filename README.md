@@ -156,6 +156,22 @@ The features I am going to use to predict calories are known before cooking the 
 
 ## Baseline Model
 
+**This model is a baseline linear regression model that predicts the number of calories in a recipe based on the following features:**
+- n_ingredients: Number of ingredients in the recipe (quantitative).
+- minutes: Cooking time in minutes (quantitative).
+- n_steps: Number of steps in the recipe (quantitative).
+
+All three features (n_ingredients, minutes, n_steps) are numeric and continuous. Since all features are quantitative, no encoding was required. 
+
+The features were standardized using StandardScaler to ensure that all features had a mean of 0 and a standard deviation of 1. This step was to prevent features with larger scales from dominating the model's coefficients, as well as address the outliers observed.
+
+**Observed Metrics:** 
+R-squared (Train): 0.0294
+R-squared (Test): 0.0289
+RMSE: 23.7689
+
+As you can see with the above metrics, this is not what I consider to be a good model. The R-squared values are very low, indicating that the model explains less than 3% of the variability in the target variable (calories). The RMSE of 23.7689 is pretty high, suggesting that the model's predictions deviate substantially from the actual values. This tells me This indicates that the baseline features (n_ingredients, minutes, and n_steps) capture some variability in calories but are insufficient for accurate predictions.
+
 ## Final Model
 
 ## Fairness Analysis
