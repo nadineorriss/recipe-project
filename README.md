@@ -94,6 +94,7 @@ Then, I proceeded to examine the missingness of the 'rating' column in the merge
 **Test Statistic:** The test statistic is the absolute difference in mean minutes (cooking time) between rows where rating is missing and rows where it is not missing.
 
 **Significance Level:** 0.05
+
 I conducted a permutation test by shuffling the missingness mask of the rating column 1000 times to simulate the null hypothesis, which assumes no relationship between the missingness of rating and the cooking time. For each permutation, I calculated the mean difference in the two distributions (missing vs. non-missing rating), generating 1000 simulated test statistics to compare against the observed value.
 
 
@@ -108,6 +109,7 @@ The observed statistic of 51.4524 is indicated by the red vertical line on the g
 **Test Statistic:** The test statistic is the absolute difference in mean number of steps (n_steps) between rows where rating is missing and rows where it is not missing.
 
 **Significance Level:** 0.05
+
 I conducted a permutation test by shuffling the missingness mask of the rating column 1000 times to simulate the null hypothesis, which assumes no relationship between the missingness of rating and the number of steps. For each permutation, I calculated the mean difference in the two distributions (missing vs. non-missing rating), generating 1000 simulated test statistics to compare against the observed value.
 
 
@@ -115,9 +117,13 @@ The observed statistic of 1.3386 is indicated by the red vertical line on the gr
 
 ## Hypothesis Testing
 **Null Hypothesis:** The average rating for recipes that take 15 minutes or less is the same as the average rating for recipes that take more than 15 minutes.
+
 **Alternate Hypothesis:** The average rating for recipes that take 15 minutes or less is different from the average rating for recipes that take more than 15 minutes.
+
 **Test Statistic:** The absolute difference in mean ratings between the two groups (recipes that take 15 minutes or less vs. those that take more than 15 minutes).
+
 **Significance Level:** 0.05
+
 To evaluate the relationship between cooking time and average recipe ratings, I performed a permutation test:
 
 1. Calculated the observed test statistic, which was the absolute difference in mean ratings between the two groups (obs_diff_15 = 0.0485).
