@@ -66,7 +66,7 @@ To prepare the dataset for analysis, several key data cleaning steps were perfor
 The histogram below visualizes the distribution of recipe cooking times. The distribution is right-skewed, indicating that most recipes have shorter cooking times (e.g., under 60 minutes), while a smaller number require significantly longer preparation times, which could represent more elaborate or slow-cooked dishes.
 
 <iframe
-  src="fig.html"
+  src="fig_rating.html"
   width="800"
   height="600"
   frameborder="0"
@@ -75,12 +75,22 @@ The histogram below visualizes the distribution of recipe cooking times. The dis
 
 The histogram below visualizes the distribution of average recipe ratings, showing a left-skewed trend where the majority of recipes have high ratings (e.g., 4 or 5). This suggests that most recipes are well-received by users, with only a small proportion receiving lower ratings, indicating overall positive feedback for the dataset's recipes.
 
-PUT PLOT HERE 
+<iframe
+  src="fig_rating.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
 
 ### Bivariate Analysis
 The bar chart below explores the relationship between cooking time categories and the average number of ratings per recipe. It reveals a decreasing trend, where shorter recipes (e.g., "0-15 mins") tend to receive more ratings on average compared to longer recipes (e.g., "1+ hours"). This suggests that users may engage more with quicker recipes, possibly due to their convenience or broader appeal.
 
-PUT PLOT HERE
+<iframe
+  src="fig_rating.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
 
 ### Aggregate Analysis 
 The table below aggregates data by cooking time categories to calculate the total number of recipes, total ratings, and average ratings per recipe within each category, formatting the results for clarity. This helps analyze recipe popularity, user engagement, and trends in cooking times, offering insights into which categories attract the most interaction and align with user preferences.
@@ -110,7 +120,12 @@ Then, I proceeded to examine the missingness of the 'rating' column in the merge
 
 I conducted a permutation test by shuffling the missingness mask of the rating column 1000 times to simulate the null hypothesis, which assumes no relationship between the missingness of rating and the cooking time. For each permutation, I calculated the mean difference in the two distributions (missing vs. non-missing rating), generating 1000 simulated test statistics to compare against the observed value.
 
-PUT PLOT HERE
+<iframe
+  src="fig1.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
 
 The observed statistic of 51.4524 is indicated by the red vertical line on the graph. Since the p-value we calculated (0.1270) is greater than the significance level of 0.05, we fail to reject the null hypothesis. This suggests that the missingness of rating does not depend on the minutes (cooking time) column.
 
@@ -126,7 +141,12 @@ The observed statistic of 51.4524 is indicated by the red vertical line on the g
 
 I conducted a permutation test by shuffling the missingness mask of the rating column 1000 times to simulate the null hypothesis, which assumes no relationship between the missingness of rating and the number of steps. For each permutation, I calculated the mean difference in the two distributions (missing vs. non-missing rating), generating 1000 simulated test statistics to compare against the observed value.
 
-PUT PLOT HERE
+<iframe
+  src="fig2.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
 
 The observed statistic of 1.3386 is indicated by the red vertical line on the graph. Since the p-value we calculated (0.0000) is less than the significance level of 0.05, we reject the null hypothesis. This suggests that the missingness of rating does depend on the n_steps (number of steps) column.
 
